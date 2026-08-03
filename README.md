@@ -14,7 +14,7 @@ xd = 0.5sin(pi*t/20 + pi/2)
 
 yd = 0.5sin(pi*t/2)
 
-zd = 2 + 0.5sin(pi*t/20 + 3*pi/2)
+zd = 2 + 0.5sin(pi*t/20 + 3pi/2)
 
 psid = 0
 <img width="1074" height="674" alt="image" src="https://github.com/user-attachments/assets/d96c5303-c175-4c44-b873-8587e6cd30e2" />

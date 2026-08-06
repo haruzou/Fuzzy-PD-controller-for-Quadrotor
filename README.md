@@ -1,4 +1,4 @@
-# Fuzzy-PD-controller-for-Quadrotors (Matlab r2025a)
+# Fuzzy-PD-controller-for-Quadrotor (Matlab r2025a)
 
 In this case, I simulated a fuzzy filter with a 2-input 1-output structure and used two parallel branches for the fuzzy inference system (FIS) of delta Kp and delta Kd.
 

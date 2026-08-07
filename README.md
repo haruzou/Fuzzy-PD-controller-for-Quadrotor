@@ -5,7 +5,8 @@ In this case, I simulated a fuzzy filter with a 2-input 1-output structure and u
 Regarding the simulation environment, with dx=dy=dz=d_phi=d_theta=d_psi = 0 (error), the results were very good with a very small difference between the desired trajectory and the calculated trajectory (approximately 0.01%).
 
 I simulated this project based on https://doi.org/10.1016/j.rico.2025.100568
-# Simulink
+# Simulation Results
+## Simulink
 <img width="1917" height="1009" alt="image" src="https://github.com/user-attachments/assets/e71dcf3e-4427-41ae-bad3-39e0e28d23ca" />
 
 
@@ -19,4 +20,10 @@ zd = 2 + 0.5sin(pi*t/20 + 3pi/2)
 
 psid = 0
 <img width="1076" height="679" alt="image" src="https://github.com/user-attachments/assets/cdd0ad3a-9c75-46af-8ee3-9f7af40f20f5" />
-# MATLAB mfile
+## MATLAB mfile
+<img width="1076" height="646" alt="image" src="https://github.com/user-attachments/assets/09abe252-60ca-486b-b3c6-b9841e479d4c" />
+
+<img width="1076" height="645" alt="image" src="https://github.com/user-attachments/assets/b2838df1-38a6-46ba-ad04-fa2298d7cae3" />
+
+<img width="1076" height="644" alt="image" src="https://github.com/user-attachments/assets/f121ce1f-8b79-41c0-9602-4ea393091fe5" />
+

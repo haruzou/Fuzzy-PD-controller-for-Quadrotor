@@ -24,6 +24,4 @@ psid = 0
 
 <img width="1076" height="645" alt="image" src="https://github.com/user-attachments/assets/b2838df1-38a6-46ba-ad04-fa2298d7cae3" />
 
-![Uploading image.png…]()
-
-
+<img width="1076" height="645" alt="image" src="https://github.com/user-attachments/assets/ded57a15-e382-429b-8f91-a1a2edf9afee" />

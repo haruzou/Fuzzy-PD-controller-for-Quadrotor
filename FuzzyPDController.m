@@ -69,6 +69,15 @@ theta_d_prev = X(:,14);
 xd = 0.5*cos(pi*t/20);
 yd = 0.5*sin(pi*t/20);
 zd = 2 - 0.5*cos(pi*t/20);
+psi_d = 0;
+
+%% =========================================================================
+%% 5. PLOTTING RESULTS
+%% =========================================================================
+xd = 0.5*cos(pi*t/20);
+yd = 0.5*sin(pi*t/20);
+zd = 2 - 0.5*cos(pi*t/20);
+psi_d = zeros(size(t));
 
 %% =========================================================================
 %% 5. PLOTTING RESULTS
@@ -85,29 +94,27 @@ axis equal; view(45, 30);
 figure('Name','Position tracking');
 subplot(3,1,1);
 plot(t, x, 'b', t, xd, 'r--', 'LineWidth', 1.5); grid on;
-ylabel('x (m)'); legend('Actual','Desired')
-title('Position Tracking');
+ylabel('x (m)'); legend('Actual','Desired');
+title('Position tracking');
 subplot(3,1,2);
 plot(t, y, 'b', t, yd, 'r--', 'LineWidth', 1.5); grid on;
 ylabel('y (m)'); legend('Actual','Desired')
 subplot(3,1,3);
 plot(t, z, 'b', t, zd, 'r--', 'LineWidth', 1.5); grid on;
-ylabel('z (m)'); xlabel('Time (s)');  legend('Actual','Desired')
+ylabel('z (m)'); xlabel('Time (s)');  legend('Actual','Desired');
 
 figure('Name','Attitude tracking','Color','w');
 subplot(3,1,1);
-
-plot(t,phi,'b--'); grid on
-ylabel('\phi [rad]'); legend('\phi','Location','best');
+plot(t, phi, 'b', t, phi_d_prev, 'r--', 'LineWidth', 1.5); grid on;
+ylabel('\phi (rad)'); legend('\phi_d','\phi');
+title('Attitude tracking');
 subplot(3,1,2);
-
-plot(t,theta,'b--'); grid on
-ylabel('\theta [rad]'); legend('\theta','Location','best');
+plot(t, theta, 'b', t, theta_d_prev, 'r--', 'LineWidth', 1.5); grid on;
+ylabel('\theta (rad)'); legend('\theta_d','\theta');
 subplot(3,1,3);
-plot(t,psi,'b--'); grid on
-ylabel('\psi [rad]'); xlabel('t [s]'); legend('\psi','Location','best');
- 
-%% =========================================================================
+plot(t, psi, 'b', t, psi_d, 'r--', 'LineWidth', 1.5); grid on;
+ylabel('\psi (rad)'); xlabel('Time (s)'); legend('\psi','\psi_d');
+
 %% CONTROL FUNCTION
 %% =========================================================================
 function deq = f(t, X)
